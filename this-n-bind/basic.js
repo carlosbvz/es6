@@ -1,6 +1,11 @@
+'use strict';
+
 let dog = {
 	sound: 'woof',
 	talk: function() {
-		console.log(this.sound);
+		console.log('woof');
 	}
 }
+dog.talk();
+let dogTalk = dog.talk();
+dogTalk();
