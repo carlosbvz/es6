@@ -8,7 +8,11 @@ const objects = [
 	{name: 'dante', type: 'dog'}
 ]
 
-let isThing = (item) => item.type === 'thing'
+/*
+|	This will return 
+*/
+let uniqueArray = objects.filter(function(item, pos, self) {
+    return self.indexOf(item) == pos
+})
 
-console.log(objects.filter(isThing))
-
+console.log(uniqueArray)
