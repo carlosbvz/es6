@@ -9,7 +9,9 @@ let x = 2, y = 3,
 
 // The new es6 way
 let oES6 = {
+	// concise property
 	x, // x = 2
+	// concise methods
 	y() {
 		console.log(this.x) // 2
 	},
